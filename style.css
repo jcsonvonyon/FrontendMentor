@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     margin: 0px;
     padding: 0px;
@@ -14,7 +13,7 @@ body{
 
 .two{
     background-color: #ffffff;
-    width: 270px;
+    width: 250px;
     align-items: center;
     border-radius: 15px;
     height: 400px;
@@ -27,8 +26,9 @@ body{
 }
 
 .img{
-    width: 250px;
+    width: 230px;
     border-radius: 10px;
+    margin-bottom: 7px;
 }
 
 .pd{
@@ -39,65 +39,11 @@ body{
 p{
     font-size: 15px;
     font-family: Outfit;
-    color: #9A9B9F;
-
+    color: #A1A1A6;
 }
 
 h4{
     font-family: Outfit;
     font-size: 18px;
-    font-weight: bold;
+    color: #173044;
 }
-
-
-=======
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #D5E3ED;
-    font-size: 15px;
-}
-
-
-
-.two{
-    background-color: #ffffff;
-    width: 220px;
-    align-items: center;
-    border-radius: 15px;
-    height: 350px;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0;
-    transform: translate(-50%, -50%);
-}
-
-.img{
-    width: 200px;
-    border-radius: 10px;
-}
-
-.pd{
-    margin: 10px;
-    text-align: center;
-}
-
-p{
-    font-size: 15px;
-    font-family: Outfit;
-
-}
-
-h4{
-    font-family: Outfit;
-
-}
-
-
->>>>>>> 75332b6455bf079565cc264aef9cde79b6affaef
