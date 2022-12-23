@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend Deca');
+@import url('https://fonts.googleapis.com/css?family=Big Shoulders Display');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F2F2F2;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /* height: 10vh; */
+    flex-direction: row;
+
+}
+
+.main{
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100vh; */
+
+    
+    
+}
+
+.sedan{
+    background-color: #F4800B;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 5px 0px 0px 5px;
+    height: 310px;
+    width: 180px;
+}
+
+.suv{
+    background-color: #006B73;
+    color: #ffffff;
+    padding: 25px;
+    height: 310px;
+    width: 180px;
+}
+
+.luxury{
+    background-color: #004240;
+    color: white;
+    padding: 25px;
+    border-radius: 0px 5px 5px 0px;
+    height: 310px;
+    width: 180px;
+
+}
+
+.heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: xx-large;
+
+}
+
+.paragraph{
+    font-size: 12px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.second{
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.btn{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    margin-top: 40px;
+    /* margin-bottom: 40px; */
+    padding: 10px;
+    width: 100px;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn1{
+    color: #F4800B;
+}
+
+.btn1:hover{
+    background-color: #F4800B;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.btn2{
+    color: #006B73;
+}
+
+.btn2:hover{
+    background-color: #006B73;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.btn3{
+    color: #004240;
+}
+
+.btn3:hover{
+    background-color: #004240;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+        margin-bottom: 300px;
+
+
+    }
+    .sedan{
+        border-radius: 5px 5px 0px 0px;
+    }
+    .suv{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .luxury{
+        border-radius: 0px 0px 5px 5px;
+    }
+}
