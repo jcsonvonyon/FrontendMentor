@@ -1,159 +1,258 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Fraunces');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
 
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
-body{
-    background-color: #F6EAE1;
-
-}
-
-main{
+.bg{
+    background-color: #08222F;
     display: flex;
     justify-content: center;
-    /* flex-direction: row; */
-    /* background-color: #fff; */
-    /* margin: auto; */
-    height: 100vh;
-    /* width: 500px; */
     align-items: center;
-    /* justify-items: center; */
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    background-color: #0E2B41;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px black;
 
 }
 
-img{
-    height: 29vw;
-    border-radius: 10px 0px 0px 10px;
-    width: 250px;
-}
+.main-image {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #00FFF7;
+    border-radius: 10px;
+  }
+  
+  .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+  }
 
-/* .product-image2{
-    height: 29vw;
-    border-radius: 150px 150px 0px 0px;
-    width: 250px;
-} */
 
-.text-area{
-    background-color: #fff;
-    height: 29vw;
-    border-radius: 0px 10px 10px 0px;
-    width: 250px;
+  body {
+    color: var(--colour-blue);
+    /* font-weight: 300;
+    line-height: 1.6; */
+  }
 
+  .image-container:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .image-container:hover .overlay + .view {
+    display: block;
+  }
 
-}
+  .image-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
 
 h1{
-    font-size: x-small;
-    padding: 20px;
-    color: #9C9BA4;
-    font-family: Montserrat;
-    letter-spacing: 4px;
-    margin-left: 10px;
-
-
-}
-
-h2{
-    font-size: 28px;
-    font-weight: 700;
-    color: #21242A;
-    font-family: Fraunces;
-    margin-left: 30px;
-    line-height: 1.0;
-    max-width: 200px;
-
-}
-
-h3{
-    font-size: 12px;
-    padding-top: 20px;
-    color: #9C9BA4;
-    font-family: Montserrat;
-    margin-left: 30px;
-    line-height: 1.7;
-
-}
-
-.currency{
-    display: flex;
-    width: 100%;
-    margin-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-
-
-}
-
-.h4{
-    color: #207960;
-    font-family: Fraunces;
-    font-size: xx-large;
-    width: 130px;
-
-}
-
-.h5{
-    text-decoration: line-through;
-    color: #9C9BA4;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: Montserrat;
-
-}
-
-a:link, a:visited {
-    background-color: #038063;
     color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 7px;
-    margin-left: 30px;
-    width: 200px;
-    font-family: Montserrat;
-    font-size: small;
-    font-weight: bold;
-  }
-
-  a:hover{
-    background-color: #004334;
-  }
-
-  .image{
-    width: auto;
-    height: 15px;
-  }
-
-  @media screen and (max-width: 600px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px 10px 0px 0px;
-
-
-    }
-    .product-image2{
-        border-radius: 100px 100px 0px 0px;
-    }
-    .suv{
-        border-radius: 0px 0px 0px 0px;
-    }
-    .luxury{
-        border-radius: 0px 0px 5px 5px;
-    }
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 0 10px 0;
 }
 
-/* @media screen and (max-width: 600px) {
-    .row {
-        display: flex;
-        flex-direction: column;
+.card-para{
+    color: #708EA8;
+    font-weight: 350;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+}
+
+
+
+.card-data{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+}
+
+
+.data-text{
+    color: #00CFD1;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+
+.card-text2{
+    color: #708EA8;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+}
+
+.card-data1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+.card-data1a{
+    width: 15%;
+}
+
+.card-data2{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 50%;
+}
+
+.card-data2a{
+    width: 20%;
+}
+
+
+.avatar{
+    width: 100%;
+    border-radius: 50%;
+    /* height: 100%; */
+    border: 1px solid white;
+}
+
+
+.footer-text{
+    color: #708EA8;
+    
+    /* align-items: flex-start; */
+
+}
+
+.footer-text2{
+    color: white;
+
+}
+
+.card-img:hover{
+    color: #00CFCC;
+    /* text-decoration: none; */
+    cursor: pointer;
+}
+
+
+.footer-text3{
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer-text3:hover{
+    color: #00CFCC;
+
+}
+
+.footer1{
+    width: 10%;
+    margin-right: 10px;
+}
+.footer2{
+    width: 90%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+hr{
+    color: rgb(165, 153, 153);
+    height: 1px;
+}
+
+.clock, .ethereum{
+    width: 50%;
+
+
+}
+
+
+@media screen and (max-width:375px) {
+    .card{
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 50px black;
+    
     }
-} */
+
+    .footer2{
+        width: 90%;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+
+    .footer-text2{
+        color: white;
+        font-size: medium;
+        font-weight: 400;
+    
+    }
+
+    .data-text{
+        font-size: medium;
+        font-weight: bold;
+    
+    }
+
+    .card-data2a{
+        width: 25%;
+    }
+
+
+    .card-text2{
+        font-weight: bold;
+        font-size: medium;
+        text-align: left;
+    }
+    
+}
+
+
+
